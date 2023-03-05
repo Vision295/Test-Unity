@@ -1,7 +1,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class Hover : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
     public void PointerEnter(RectTransform transform)
     {

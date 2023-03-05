@@ -2,14 +2,14 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadSceneOnClick : MonoBehaviour
+public class ManagerScene : MonoBehaviour
 {
     public void ClickOnComputerButton(GameObject component)
     {
-        StartCoroutine(LoadComponentScene(component));       
+        StartCoroutine(LoadSceneOnClick(component));       
     }
 
-    IEnumerator LoadComponentScene(GameObject component)
+    IEnumerator LoadSceneOnClick(GameObject component)
     {
         // Fade In
         FadeSystem.instance.FadeIn();

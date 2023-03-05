@@ -19,5 +19,5 @@ public class FadeSystem : MonoBehaviour
     public void FadeIn()
     {
         FadeSystem.instance.GetComponent<Animator>().SetTrigger("FadeIn");
-    } 
+    }
 }
