@@ -13,7 +13,7 @@ public class ManagerScene : MonoBehaviour
     {
         // Fade In
         FadeSystem.instance.FadeIn();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         // Load a scene relative to the component of the "computer"
         SceneManager.LoadScene(component.name);
     }

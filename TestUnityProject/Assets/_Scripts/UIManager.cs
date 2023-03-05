@@ -11,9 +11,4 @@ public class UIManager : MonoBehaviour
     {
         transform.localScale = new Vector3(1, 1, 1);
     }
-
-    public void BackToBase()
-    {
-        SceneManager.LoadScene("Base");
-    }
 }
