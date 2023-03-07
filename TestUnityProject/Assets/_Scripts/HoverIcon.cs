@@ -8,6 +8,7 @@ public class HoverIcon : MonoBehaviour
         // run animation of icon in which the pointer enterred
         foreach(Animator item in animator)
         {
+            // it is not the same animation for all hovering items
             item.SetBool("Hovering", true);
         }
     }
@@ -16,6 +17,7 @@ public class HoverIcon : MonoBehaviour
     {
         foreach(Animator item in animator)
         {
+            // it is not the same animation for all hovering items
             item.SetBool("Hovering", false);
         }
     }
