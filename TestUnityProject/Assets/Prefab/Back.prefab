@@ -295,7 +295,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4081398546272422597, guid: 536141a29115eb6479b40c85df7cf841, type: 3}
         m_TargetAssemblyTypeName: ManagerScene, Assembly-CSharp
         m_MethodName: ClickOnComputerButton
         m_Mode: 2
@@ -324,8 +324,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Hover, Assembly-CSharp
+        - m_Target: {fileID: 4081398546272422619, guid: 536141a29115eb6479b40c85df7cf841, type: 3}
+          m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
           m_MethodName: PointerEnter
           m_Mode: 2
           m_Arguments:
@@ -340,8 +340,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Hover, Assembly-CSharp
+        - m_Target: {fileID: 4081398546272422619, guid: 536141a29115eb6479b40c85df7cf841, type: 3}
+          m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
           m_MethodName: PointerExit
           m_Mode: 2
           m_Arguments:
