@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ComputerDiagram/Screen.unity
     guid: cc7bb5cb0f06f5147a15fcdb4b68eb2f
+  - enabled: 1
+    path: Assets/Scenes/ComputerDiagram/Keyboard.unity
+    guid: da6538c7aa508f54c9cba99e187523d0
   m_configObjects: {}
