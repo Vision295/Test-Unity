@@ -681,6 +681,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display: 'Ceci est le premier '
+  keyboard:
+  - {fileID: 876170480}
+  - {fileID: 399008767}
+  - {fileID: 841833392}
+  - {fileID: 858442617}
+  - {fileID: 1611144724}
 --- !u!1 &333191931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4013,7 +4019,7 @@ GameObject:
   - component: {fileID: 1611144727}
   - component: {fileID: 1611144726}
   m_Layer: 5
-  m_Name: Space
+  m_Name: ' '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4026,7 +4032,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611144724}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4036,7 +4042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -94.2, y: -68.6}
+  m_AnchoredPosition: {x: -94.19997, y: -68.600006}
   m_SizeDelta: {x: 135.2, y: 33.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1611144726
