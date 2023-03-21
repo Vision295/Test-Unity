@@ -36,7 +36,7 @@ public class ManagerGame : MonoBehaviour
         return new string(m_display);
     }
 
-    void HighLight(char _nextCharacter)
+    void HighLight(char _nextCharacter, bool _ending = false)
     {
         /*
             function used to highlight (make it bigger) the key associated to the 
@@ -44,7 +44,22 @@ public class ManagerGame : MonoBehaviour
         */
 
         // to exclude the name of certain objects
-        bool error;
+        bool error = false;
+        int maj = (int)_nextCharacter;
+        if(
+            (maj > 65 && maj < 90) ||
+            (maj > 48 && maj < 57) ||
+            maj == 63 ||
+            maj == 46 ||
+            maj == 47 ||
+            maj == 37
+        )
+        {
+            keyboard[5].GetComponent<RectTransform>().localScale = new Vector3(1.5f, 1.5f, 1);
+        } else 
+        {
+            keyboard[5].GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+        }
 
         // loop throw keyboard to find the corresponding key
         foreach(GameObject item in keyboard)
@@ -77,7 +92,7 @@ public class ManagerGame : MonoBehaviour
                     {
                         // if all conditions required are forfilled than we change 
                         // the scale of the chosen key
-                        if(_nextCharacter == a)
+                        if(_nextCharacter == a && !_ending)
                         {
                             children.localScale = new Vector3(2, 2, 1);
                             // we break to avoid reducing the size of the key to  (1, 1, 1) 
@@ -107,7 +122,7 @@ public class ManagerGame : MonoBehaviour
         // We test if the list of inputs isn't empty and if the user inputs a key
         if(Input.anyKeyDown && Input.inputString.Length >= 1)
         {
-            // test if index ot out of range
+            // test if index is out of range
             if(advancement < example.Length - display.Length)
             {
                 // if the user inputs the same character as the example
@@ -120,7 +135,7 @@ public class ManagerGame : MonoBehaviour
                 } 
             }
             // same : if index not out of range
-            else if(advancement < example.Length)
+            else if(advancement < example.Length - 1)
             {
                 if(Input.inputString[0] == (example[advancement]))
                 {
@@ -129,6 +144,14 @@ public class ManagerGame : MonoBehaviour
                     display = FillDisplay(display.ToCharArray(), ' ');
                     HighLight(example[advancement]);
                 } 
+            } else 
+            // if the user has finished the example
+            {
+                if(Input.inputString[0] == (example[advancement]))
+                {
+                    display = FillDisplay(display.ToCharArray(), ' ');
+                    HighLight(' ', true);
+                }
             }
         }
 
