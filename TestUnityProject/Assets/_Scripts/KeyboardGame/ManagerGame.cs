@@ -1,9 +1,10 @@
 using UnityEngine;
 using TMPro;
-using System.Linq;
+using System.IO;
 
 public class ManagerGame : MonoBehaviour
 {
+    public StreamReader example1 = new StreamReader("C:/Users/theop/Documents/_Perso/Test-Unity/TestUnityProject/Assets/Texts/Example.txt");
     // example is the input the user (chain of character)
     private char[] example = "Ceci est le premier exemple tu dois essayer d'écrire ce qui est affiché. Bon courage !".ToCharArray();
     // string later converted into a chain of character
@@ -111,6 +112,7 @@ public class ManagerGame : MonoBehaviour
     void Awake()
     {
         text = GetComponent<TMP_Text>();
+        example = example1.ReadLine().ToCharArray();
     }
     void Start()
     {
@@ -156,6 +158,10 @@ public class ManagerGame : MonoBehaviour
         }
 
         text.text = display;
-        
+
+        if(advancement > example.Length - 1)
+        {
+            example = example1.ReadLine().ToCharArray();
+        }    
     }
 }
