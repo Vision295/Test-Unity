@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ComputerDiagram/KeyboardGame.unity
     guid: c2f7eb1d7bf3bf947b610e8a91300121
+  - enabled: 1
+    path: Assets/Scenes/ComputerDiagram/ScreenMiniGame.unity
+    guid: 93a610acfe1824e46ba11d3010209a13
   m_configObjects: {}
