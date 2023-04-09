@@ -1,2 +1,2 @@
-Ceci est l'exemple de test ultime.
-Ceci est le deuxième test ultime de la mort qui tue tout ce qui bouge même les méchants.
+Ceci est l'exemple de test ultime. 
+Ceci est le deuxième test ultime de la mort qui tue tout ce qui bouge même les méchants. 
