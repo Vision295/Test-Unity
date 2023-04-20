@@ -3,8 +3,8 @@ using UnityEngine;
 public class LineManager : MonoBehaviour
 {
     public LineRenderer lineRenderer;
-    public Transform origin;
-    bool hasClickedOn;
+    public RectTransform origin;
+    public Transform isSelectingLine;
     void Awake()
     {
         lineRenderer.SetPosition(0, origin.position);
@@ -13,7 +13,7 @@ public class LineManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hasClickedOn)
+        if(isSelectingLine.position == transform.position)
         {
             lineRenderer.SetPosition(1, Input.mousePosition);
         } else {
@@ -23,6 +23,6 @@ public class LineManager : MonoBehaviour
 
     public void OnClick()
     {
-        hasClickedOn = !hasClickedOn;
+        isSelectingLine.position = transform.position;
     }
 }
